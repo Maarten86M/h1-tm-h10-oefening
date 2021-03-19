@@ -1,0 +1,22 @@
+
+#tekst-balk {
+    margin-left: 40px;
+    width: 150px;
+    height: 80px;
+    background-color: var(--aside-three-color);
+    border-radius: 20px;
+    position: relative;
+}
+
+#tekst-balk::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 20px solid var(--aside-three-color);
+    border-bottom: 13px solid transparent;
+    left: -20px;
+    top: 26px;
+}
