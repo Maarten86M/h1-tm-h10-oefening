@@ -20,6 +20,11 @@ main {
     padding: 16px;
 }
 
+ul {
+    list-style-type: square;
+    color: var(--aside-four-color);
+}
+
 /*CSS GRID*/
 #grid-container {
     display: grid;
@@ -97,6 +102,7 @@ main {
 #grid-aside-one {
     background-color: var(--aside-one-color);
     grid-area: aside-one;
+    padding-left: 30px;
 }
 
 #grid-aside-two {
