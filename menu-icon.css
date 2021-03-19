@@ -1,0 +1,63 @@
+/*MENU TRANSITIE*/
+
+#menu-container {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+#menu-item {
+    position: relative;
+    width: 40px;
+    height: 8px;
+    background-color: var(--main-two-color);
+    top: 16px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#menu-container:hover #menu-item {
+    background-color: var(--item-color-none);
+}
+
+#menu-item::before,
+#menu-item::after {
+    background-color: var(--main-two-color);
+    width: 40px;
+    height: 8px;
+    position: relative;
+    display: block;
+    content: "";
+}
+
+/*Start positie menu icon balk boven*/
+#menu-item::before {
+    left: 0;
+    top: -16px;
+    transform: rotate(0deg);
+    transform-origin: bottom left;
+    transition: all 0.4s ease-in-out;
+}
+
+/*Start positie menu icon balk onder*/
+#menu-item::after {
+    left: 0;
+    top: 8px;
+    transform: rotate(0deg);
+    transform-origin: top left;
+    transition: all 0.4s ease-in-out;
+}
+
+/*Eind positie menu icon balk boven*/
+#menu-container:hover #menu-item::before{
+    transform: rotate(40deg);
+    transform-origin: bottom left;
+    width: 45px;
+}
+
+
+/*Eind positie menu icon balk onder*/
+#menu-container:hover #menu-item::after {
+    transform: rotate(-40deg);
+    transform-origin: top left;
+    width: 45px;
+}
