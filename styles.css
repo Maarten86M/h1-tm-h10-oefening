@@ -101,13 +101,37 @@ h2 {
 #grid-main-two {
     background-color: var(--main-two-color);
     grid-area: main-two;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
+}
+
+section {
+    background-color: yellowgreen;
+    width: 200px;
+    font-size: 15px;
+    font-style: italic;
+}
+form {
+    padding: 20px;
+    height: 150px;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 #grid-aside-one {
     background-color: var(--aside-one-color);
     grid-area: aside-one;
     padding-left: 30px;
+}
+
+input {
+    margin-bottom: 10px;
 }
 
 #grid-aside-two {
