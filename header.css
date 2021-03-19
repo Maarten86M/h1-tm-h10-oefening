@@ -37,7 +37,7 @@
     color: var(--main-two-color);
 }
 
-.pagina-link::after{
+.pagina-link::after {
     display: inline-block;
     content: "→";
 }
@@ -46,14 +46,14 @@
     color: var(--aside-two-color)
 }
 
-/*DESKTOP FORMAAT*/
+/*DESKTOP FORMAAT TEXT*/
 @media screen and (min-width: 1024px) {
     .pagina-link {
         font-size: 24px;
     }
 }
 
-/*TABLET FORMAAT*/
+/*TABLET FORMAAT TEXT*/
 @media screen and (min-width: 576px) and (max-width: 1024px) {
     .pagina-link {
         font-size: 16px;
