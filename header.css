@@ -22,19 +22,35 @@
 
 /*EIND STAAT*/
 #header-logo:hover::after {
-    width: 150px;
+    width: 117px;
 
 }
 
 
 /*Navbar items*/
+
+
 .pagina-link {
     text-decoration: none;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     color: var(--main-two-color);
 }
 
 .pagina-link:visited {
     color: var(--aside-two-color)
+}
+
+/*DESKTOP FORMAAT*/
+@media screen and (min-width: 1024px) {
+    .pagina-link {
+        font-size: 24px;
+    }
+}
+
+/*TABLET FORMAAT*/
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+    .pagina-link {
+        font-size: 16px;
+    }
 }

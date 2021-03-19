@@ -36,6 +36,7 @@ main {
                                 "footer footer";
 }
 
+/*DESKTOP FORMAAT*/
 @media screen and (min-width: 1024px) {
     #grid-container {
         grid-template-columns: 2fr 1fr 1fr 2fr;
@@ -49,7 +50,7 @@ main {
     }
 
 }
-
+/*TABLET FORMAAT*/
 @media screen and (min-width: 576px) and (max-width: 1024px) {
     #grid-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
