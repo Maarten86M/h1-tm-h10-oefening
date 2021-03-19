@@ -18,6 +18,7 @@
 main {
     padding: 16px;
 }
+
 #grid-container {
     display: grid;
     row-gap: 16px;
@@ -30,8 +31,7 @@ main {
                                 "aside-three aside-four"
                                 "aside-five aside-five"
                                 "main-two main-two"
-                                "footer footer"
-;
+                                "footer footer";
 }
 
 @media screen and (min-width: 1024px) {
@@ -45,20 +45,23 @@ main {
                             "main-two main-two main-two main-two"
                             "footer footer footer footer";
     }
+
 }
 
-@media screen and (min-width: 576px) and (max-width: 1024px){
+@media screen and (min-width: 576px) and (max-width: 1024px) {
     #grid-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50px 300px 300px 200px 200px 50px;
+        grid-template-rows: 50px 300px 300px 200px 50px;
         grid-template-areas:    "header header header header"
                                 "main-one main-one main-one main-one"
-                                "main-two main-two main-two main-two"
                                 "aside-one aside-two aside-three aside-four"
                                 "aside-five aside-five aside-five aside-five"
-                                "footer footer footer footer"
-    ;
+                                "footer footer footer footer";
 
+    }
+
+    #grid-main-two {
+        display: none;
     }
 }
 
