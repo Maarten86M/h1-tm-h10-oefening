@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --header-color: #ff6b6c;
+    --main-one-color: #ef798a;
+    --main-two-color: #ffe0e6;
+    --aside-one-color: #affee5;
+    --aside-two-color: #49dcb1;
+    --aside-three-color: #42bfc6;
+    --aside-four-color: #3ba1da;
+    --aside-five-color: #006ba1;
+    --footer-color: #144366;
+}
+
+main {
+    padding: 16px;
+}
+#grid-container {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 200px 100px 100px 75px 200px 50px;
+    grid-template-areas:        "header header"
+                                "main-one main-one"
+                                "aside-one aside-two"
+                                "aside-three aside-four"
+                                "aside-five aside-five"
+                                "main-two main-two"
+                                "footer footer"
+;
+}
+
+@media screen and (min-width: 1024px) {
+    #grid-container {
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-rows: 50px 300px 200px 100px 300px 50px;
+        grid-template-areas:    "header header header header"
+                            "main-one main-one main-one main-one"
+                            "aside-one aside-two aside-two aside-three"
+                            "aside-four aside-four aside-five aside-five"
+                            "main-two main-two main-two main-two"
+                            "footer footer footer footer";
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1024px){
+    #grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px 300px 300px 200px 200px 50px;
+        grid-template-areas:    "header header header header"
+                                "main-one main-one main-one main-one"
+                                "main-two main-two main-two main-two"
+                                "aside-one aside-two aside-three aside-four"
+                                "aside-five aside-five aside-five aside-five"
+                                "footer footer footer footer"
+    ;
+
+    }
+}
+
+
+.grid-item {
+    padding: 8px;
+}
+
+#grid-header {
+    background-color: var(--header-color);
+    grid-area: header;
+}
+
+#grid-main-one {
+    background-color: var(--main-one-color);
+    grid-area: main-one;
+}
+
+#grid-main-two {
+    background-color: var(--main-two-color);
+    grid-area: main-two;
+}
+
+#grid-aside-one {
+    background-color: var(--aside-one-color);
+    grid-area: aside-one;
+}
+
+#grid-aside-two {
+    background-color: var(--aside-two-color);
+    grid-area: aside-two;
+}
+
+#grid-aside-three {
+    background-color: var(--aside-three-color);
+    grid-area: aside-three;
+}
+
+#grid-aside-four {
+    background-color: var(--aside-four-color);
+    grid-area: aside-four;
+}
+
+#grid-aside-five {
+    background-color: var(--aside-five-color);
+    grid-area: aside-five;
+}
+
+#grid-footer {
+    background-color: var(--footer-color);
+    grid-area: footer;
+}
