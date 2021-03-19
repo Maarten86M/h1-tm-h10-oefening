@@ -25,6 +25,10 @@ ul {
     color: var(--aside-four-color);
 }
 
+h2 {
+    color: red;
+}
+
 /*CSS GRID*/
 #grid-container {
     display: grid;
